@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is the form page for my whales website">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_package_v0.16/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_package_v0.16/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Form</title>
+
+  <meta property="og:title" content="Whale Form Page">
+  <meta property="og:site_name" content="Whales R Us">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="website">
+  <meta property="og:type" content="jpeg">
+  <meta property="og:image" content="../images/Whale1600.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="This is a picture of a whale">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,500&family=Rubik:ital,wght@0,400;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../style/main.css">
+</head>
+
+<body class="formbackgroundcolor">
+
+  <div class="main-menu">
+    <div class="menu-icon">
+      <svg viewbox="0 0 60 60" width="60px" height="60px">
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      </svg>
+    </div>
+    <nav>
+      <h2 class="hidden"></h2>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../about/">About</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <h1 class="h1form">Whale Wedding Invitation Request</h1>
+    <div class="form">
+      <section>
+
+        <img class="form-svg" src="../images/favicon_package_v0.16/whale-breathing-svgrepo-com.svg"
+          alt="Whale SVG Icon">
+        <form>
+          <label for="name">Full name</label>
+          <input type="text" name="name" id="name" required>
+
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" required>
+
+          <label for="phone">Phone number</label>
+          <input type="tel" name="phone" id="phone">
+
+          <label for="month">Your favorite month</label>
+          <input type="month" name="month" id="month">
+
+          <fieldset>
+            <legend>Which wedding events would you like to attend? (check all that apply)</legend>
+
+            <input type="checkbox" id="lunch" name="ingredients" value="lunch">
+            <label for="lunch">Luncheon</label>
+
+            <input type="checkbox" id="bagel" name="ingredients" value="bagel">
+            <label for="bagel">Bagel Bar</label>
+
+            <input type="checkbox" id="tango" name="ingredients" value="tango">
+            <label for="tango">Zucchini Tango</label>
+
+            <input type="checkbox" id="wedding" name="ingredients" value="wedding">
+            <label for="wedding">Whale Wedding</label>
+
+            <input type="checkbox" id="recepetion" name="ingredients" value="recepetion">
+            <label for="recepetion">Whale Reception</label>
+
+            <input type="checkbox" id="after-party" name="ingredients" value="platypus-liver">
+            <label for="after-party">Whale After Party</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>How do you know the couple?</legend>
+
+            <input type="radio" name="taste" id="whale#1" value="whale#1">
+            <label for="whale#1">Whale#1</label>
+
+            <input type="radio" name="taste" id="whale#2" value="whale#2">
+            <label for="whale#2">Whale#2</label>
+
+            <input type="radio" name="taste" id="both" value="both">
+            <label for="both">Both</label>
+
+          </fieldset>
+
+          <!-- the placeholder attribute appears when no text is present. For accessibilty reasons, don't use a placeholder instead of a label  -->
+          <label for="text-field">Tell the couple some advice</label>
+          <textarea name="text-field" id="text-field" rows="10" placeholder="Love is an open door."></textarea>
+
+          <!-- You will often see <input type="submit"> instead of <button type="submit">. They are the same functionally, but <button> is newer and more easily styled.    -->
+          <button type="submit">Submit Now</button>
+
+        </form>
+      </section>
+    </div>
+  </main>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+      });
+    });
+  </script>
+</body>
+
+</html>
